@@ -4,28 +4,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome - Christianus-Site</title>
 
     <!-- Tailwind Link -->
     <link href="/dist/output.css" rel="stylesheet">
 
     <!-- Font Google Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome Icon -->
+    <script src="https://kit.fontawesome.com/20da93977d.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-body text-white font-poppins p-12">
+<body class="bg-body text-white font-poppins pb-12">
     
     <!-- Navbar -->
-    <header>
-        <div class="container">
+    <header class="py-6">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <div class="text-lg">.Christianus-Site</div>
-            <div>
+            <div class="hidden md:flex space-x-12 items-center">
                 <a href="#" class="text-selected-text">Home</a>
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
-                <a href="#contact"><button>Contact Me</button></a>
+                <a href="#contact"><button class="px-6 py-2 bg-theme font-bold rounded-lg hover:shadow-md hover:shadow-selected-text hover:bg-blue-900 hover:transition-all">Contact Me</button></a>
+            </div>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </header>
 
+    <!-- Hero -->
+    <div class="container mt-16 flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="flex flex-wrap md:flex-nowrap">
+            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block mt-[150px]">
+                <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-37">
+                    <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+                    </a>
+
+                    <a href="#portfolio" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">About</span>
+                    </a>
+
+                    <a href="#testimony" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Portfolio</span>
+                    </a>
+
+                    <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Building <br> beautiful web experiences.</h1>
+                <button class="px-8 py-4 bg-theme rounded-lg hover:shadow-md hover:shadow-selected-text hover:bg-blue-900 hover:transition-all text-white font-bold mt-12 flex items-center space-x-3">
+                    <i class="fa fa-eye"></i> <span>My Portfolio</span>
+                </button>
+            </div>
+        </div>
+        <img src="../dist/person.png" alt="Yoga" class="w-[500px] mr-[200px] mt-12 md:block md:ml-[1000px]  md:absolute md:mt-0 right-0 -z-[1] hidden">
+    </div>
+
+    <!-- My Work -->
+    <div id="portfolio" class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="portfolio" class="secondary-title">My Portfolio</h2>
+            <p class="section-paragraph">These all are my portfolio. Please enjoy!!!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+                <img src="https://source.unsplash.com/1000x600?computer" loading="lazy">
+            </div>
+        </section>
+    </div>
+
+    <!-- Testimony -->
+    <div id="testimony" class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="portfolio" class="secondary-title">Testimoni</h2>
+            <p class="section-paragraph">These all are my portfolio. Please enjoy!!!</p>
+
+            <div class="space-y-12 my-16">
+                <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    <div class="mb-6 lg:mb-0">
+                        <img src="https://placeimg.com/200/200/people" class="rounded-full w-[100px] lg:w-[250px]"/>
+                    </div>
+                    
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3x font-semibold">
+                            Achmad Faris Fadhail
+                        </h3>
+    
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-3 mb-8">
+                            <div class="badge">UI/UX</div>
+                            <div class="badge">Security</div>
+                        </div>
+
+                        <p class="text-secondary lg:text-justify">Jasa pembuatan website yang dibuat oleh Yoga sangatlah keren dan UI-nya simple tetapi tetap berkualitas sehingga user tetap paham dengan Ui-nya.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-12 my-16">
+                <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    <div class="mb-6 lg:mb-0">
+                        <img src="https://placeimg.com/200/200/people" class="rounded-full w-[100px] lg:w-[250px]"/>
+                    </div>
+                    
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3x font-semibold">
+                            Achmad Faris Fadhail
+                        </h3>
+    
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-3 mb-8">
+                            <div class="badge">UI/UX</div>
+                            <div class="badge">Back-End</div>
+                        </div>
+
+                        <p class="text-secondary lg:text-justify">Jasa pembuatan website yang dibuat oleh Yoga sangatlah keren dan UI-nya simple tetapi tetap berkualitas sehingga user tetap paham dengan Ui-nya.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-12 my-16">
+                <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    <div class="mb-6 lg:mb-0">
+                        <img src="https://placeimg.com/200/200/people" class="rounded-full w-[100px] lg:w-[250px]"/>
+                    </div>
+                    
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3x font-semibold">
+                            Achmad Faris Fadhail
+                        </h3>
+    
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-3 mb-8">
+                            <div class="badge">ERD</div>
+                            <div class="badge">UI/UX</div>
+                        </div>
+
+                        <p class="text-secondary lg:text-justify">Jasa pembuatan website yang dibuat oleh Yoga sangatlah keren dan UI-nya simple tetapi tetap berkualitas sehingga user tetap paham dengan Ui-nya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="portfolio" class="secondary-title">Hire Me</h2>
+            <p class="section-paragraph">Write your testimony in here or you can hire me by these contacts.</p>
+
+            <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+                <div class="space-y-12">
+                    <div>
+                        <label class="text-white block mb-6 text-xl font-bold">Name</label>
+                        <input type="text" class="w-full border border-input-border bg-input px-4 py-4">
+                    </div>
+                    <div>
+                        <label class="text-white block mb-6 text-xl font-bold">Email</label>
+                        <input type="text" class="w-full border border-input-border bg-input px-4 py-4">
+                    </div>
+                    <div>
+                        <label class="text-white block mb-6 text-xl font-bold">Topic</label>
+                        <select class="w-full border border-input-border bg-input px-4 py-4">
+                            <option value="">UI/UX</option>
+                            <option value="">Front-End</option>
+                            <option value="">Back-End</option>
+                            <option value="">Topic</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-white block mb-6 text-xl font-bold">Message</label>
+                        <textarea class="w-full h-[200px] border border-input-border bg-input px-4 py-4">
+                        </textarea>
+                    </div>
+                    <button type="submit" class="px-6 py-2 bg-theme rounded-lg hover:bg-blue-800 hover:shadow-md hover:shadow-theme hover:transition-all">Send Message</button>
+                </div>
+
+                <div class="mt-12">
+                    <p class="text-secondary mb-4">+62822-3055-5413</p>
+                    <a href="mailto:christianuswibisono@gmail.com" class="text-secondary underline ">christianuswibisono@gmail.com</a>
+
+                    <!-- Socials -->
+                    <div class="flex mt-20 space-x-6">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram fa-3x"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-github fa-3x"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script>
+    function updateList()
+    {
+        const titles = [...document.querySelectorAll("h1, h2")].sort((a, b) => 
+        {
+            return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top);
+        });
+
+        document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
+
+        document.querySelectorAll(".nav-dot")[[...document.querySelectorAll("h1, h2")].indexOf(titles[0])].classList.add("selected-circle");
+    }
+
+updateList();
+window.addEventListener("scroll", () => {
+    updateList();
+})
+</script>
 </body>
 </html>
